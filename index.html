@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Clash</title>
+    <!-- daisy and tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-    
 
+<body class="bg-[#010313] min-h-screen font-poppins">
 
+    <main class="main bg-[url(images/background.png)] min-h-screen bg-no-repeat bg-center">
+        <!--===  home section start from here  ===-->
+        <section class="home text-white ">
+         <div class="flex flex-col justify-center items-center min-h-screen gap-5">
+            <h1 class="text-8xl font-anton">
+                ALPHABET CLASH
+             </h1>
+             <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+             <button class="text-[#010313] py-[22px] px-[40px] bg-white rounded-md font-bold">Play Now</button>
+         </div>
+        </section>
 
+        <!--====   play ground start from here   ====-->
+
+        <section class="play-ground">
+
+        </section>
+
+        <!--====  score  ====-->
+        <section class="score">
+
+        </section>
+    </main>
 
     <script src="./js/app.js"></script>
 </body>
+
 </html>
