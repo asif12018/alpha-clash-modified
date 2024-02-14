@@ -17,7 +17,9 @@ function startGame(){
         console.log('this is key',event.key);
         if(event.key === gameData){
             document.getElementById(event.key).style.background = 'white';
-            playSound('user');
+            setTimeout(function(){
+                playSound('user');
+            }, 300);
             gameData = continueGame();
             sum++;
             document.getElementById('life-board').innerText = sum;
