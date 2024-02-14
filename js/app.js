@@ -35,9 +35,6 @@ function startGame(){
 function score(){
     hideElementById('play-ground');
     showElementById('score');
-    // document.getElementById('score-btn').addEventListener('click',function(){
-    //     play();
-    // })
 }
 
 
@@ -46,4 +43,22 @@ function play(){
     showElementById('play-ground');
     startGame();
 
+}
+
+
+
+function playSound(sound){
+    
+    
+    
+    if(sound === 'game'){
+        let gameSelect = new Audio('../audio/red.mp3');
+        gameSelect.play();
+    }else if(sound === 'user'){
+        let userSelect = new Audio('../audio/green.mp3');
+        userSelect.play();
+    }else{
+        let wrong = new Audio('../audio/wrong.mp3');
+        wrong.play();
+    }
 }
